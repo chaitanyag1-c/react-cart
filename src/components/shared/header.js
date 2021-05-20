@@ -10,8 +10,8 @@ const Header = () => {
 
     return ( 
         <header className={styles.header}>
+        <a href="http://thedailynutrition.co/"> The Daily Nutrition</a>
             <Link to='/'>Store</Link>
-            <Link to='/about'>About</Link>
             <Link to='/cart'> <CartIcon/> Cart ({itemCount})</Link>
         </header>
      );

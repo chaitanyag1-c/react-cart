@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './shared/header';
-import Footer from './shared/footer';
+import Header from './shared/header'
+import Footer from './shared/footer'
 
 import { Helmet } from 'react-helmet-async';
 
@@ -10,14 +10,15 @@ const Layout = ({title, description, children}) => {
     return ( 
         <>
         <Helmet>
-            <title>{ title ? title + " - React Boilerplate" : "React.js Boilerplate" }</title>
-            <meta name = "description" content={ description || "React.js Boilerplate" } />
+            <title>{ title ? title + " The Daily Nutrition" : "The Daily Nutrition" }</title>
+            <meta name = "description" content={ description || "The Daily Nutrition" } />
         </Helmet>
-        <Header/>
+      <Header />
         <main className="container">
             {children}
         </main>
-        <Footer/>
+        
+        <Footer />
         </>
      );
 }
